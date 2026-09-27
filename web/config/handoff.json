@@ -1,0 +1,51 @@
+{
+  "chainId": 11155111,
+  "repoUrl": "https://github.com/identity-md-launches/launch-254-tokenfaucet",
+  "version": 1,
+  "launchId": "418e6c15-929b-4625-abf4-726dea2378e1",
+  "manifest": {
+    "kind": "evm_project",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Sepolia test faucet. TokenFaucet features DRIP, starts without tokens and requires no initialization. There is no owner, admin or withdrawal path. Donations are final. Anyone can claim through multiple addresses; this is not a fair or valuable distribution. Each token's balance, decimals and transfer behavior is trusted for its own pool. The pool pairs with native ETH and has no hook; services determine the effective opening price from the pinned policy when applicable.",
+    "token": {
+      "name": "Drip",
+      "symbol": "DRIP",
+      "contract": "LaunchToken",
+      "decimals": 18
+    },
+    "contracts": [
+      {
+        "contract": "TokenFaucet",
+        "constructorArgs": [
+          "$token"
+        ]
+      }
+    ]
+  },
+  "contracts": [
+    {
+      "name": "LaunchToken",
+      "txHash": "0xb6b6756dee686507ad96de9e88ae7f80a15806f85a909c5d4f45794b28d42885",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "address": "0xcacf5fc6c177d1147ed1c44aa86295c5edd94df3",
+      "blockNumber": 11791326,
+      "creationCodeHash": "959281aede1cc3bd8f03c14713d2551641a6df9faa1794e48b9bbb3e2de962dd"
+    },
+    {
+      "name": "TokenFaucet",
+      "txHash": "0xb6b6756dee686507ad96de9e88ae7f80a15806f85a909c5d4f45794b28d42885",
+      "abiHash": "f70ff5319f98ee35729c51a4d4e7387be6493c0e62ca7efb85a487eeeabeada3",
+      "address": "0xb8bd25d97468cacb96da676ab6c54fa74e1bddcc",
+      "blockNumber": 11791326,
+      "creationCodeHash": "407de13bf6d8e1dec5d0a050b8ab01a51cc6cb9701fb722c27a24d8d7c726e3f"
+    }
+  ],
+  "sourceCommit": "ff7b97af63e4c0ad511d7e9bc79061c7d9ccb2c0",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "eda9d56eaa7a32e3b7749d1f6ff78ec949ca36bbe34a590c0f3e318c6d74de62"
+}

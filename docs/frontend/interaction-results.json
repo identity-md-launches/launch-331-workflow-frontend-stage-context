@@ -1,0 +1,126 @@
+{
+  "export": "dist/ served at /preview/",
+  "startedAt": "2026-09-27T06:56:38.234Z",
+  "mocked": true,
+  "sourceCommit": "ff7b97af63e4c0ad511d7e9bc79061c7d9ccb2c0",
+  "manifestSha256": "04c2accb93f4eb11e368aa94e6ba7fa5270416f26560404ee393f28f3999035c",
+  "realTransactions": 0,
+  "checks": [
+    {
+      "name": "disconnected and missing wallet: no transaction; clear recovery",
+      "passed": true
+    },
+    {
+      "name": "unknown wallet chain: add exact network, switch, then enable claim",
+      "passed": true
+    },
+    {
+      "name": "funded claim, cooldown, donation approvals, finality and donor pagination",
+      "passed": true
+    },
+    {
+      "name": "keyboard-only connection and donation flow",
+      "passed": true
+    },
+    {
+      "name": "empty, partial payout and cooldown exact boundary",
+      "passed": true
+    },
+    {
+      "name": "custom six-decimal token, invalid address and unsupported decimals",
+      "passed": true
+    },
+    {
+      "name": "wallet rejection preserves state and does not submit",
+      "passed": true
+    },
+    {
+      "name": "buy quote uses quoter simulation; swap uses router, native value and no approval",
+      "passed": true
+    },
+    {
+      "name": "sell requires token-to-Permit2 and Permit2-to-router permissions",
+      "passed": true
+    },
+    {
+      "name": "reverting swap simulation blocks signing and quote input changes invalidate",
+      "passed": true
+    },
+    {
+      "name": "quote expires after 60 seconds and cannot be signed",
+      "passed": true
+    },
+    {
+      "name": "long token symbols reflow at 320px; token suffix stays intact",
+      "passed": true
+    },
+    {
+      "name": "submitted transaction timeout blocks resubmission until receipt is checked",
+      "passed": true
+    },
+    {
+      "name": "account changes and disconnect invalidate eligibility and quote",
+      "passed": true
+    },
+    {
+      "name": "RPC chain mismatch, missing code and unavailable RPC fail closed",
+      "passed": true
+    },
+    {
+      "name": "tampered implementation ABI fails before mounting transaction controls",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "docs/frontend/desktop.png",
+    "docs/frontend/mobile.png",
+    "docs/frontend/keyboard-focus.png"
+  ],
+  "consoleErrors": [],
+  "browserConsoleErrors": [],
+  "viewports": [
+    1440,
+    850,
+    660,
+    390,
+    320
+  ],
+  "textEnlargement": "200% CSS root font size; not native browser zoom",
+  "resourceFailures": [],
+  "contrast": [
+    {
+      "selector": "h1",
+      "foreground": "rgb(33, 60, 50)",
+      "background": "rgb(245, 245, 238)",
+      "ratio": 10.91
+    },
+    {
+      "selector": ".intro",
+      "foreground": "rgb(93, 109, 99)",
+      "background": "rgb(245, 245, 238)",
+      "ratio": 5
+    },
+    {
+      "selector": ".claim-card .card-copy",
+      "foreground": "rgb(93, 109, 99)",
+      "background": "rgb(229, 237, 220)",
+      "ratio": 4.56
+    },
+    {
+      "selector": ".primary",
+      "foreground": "rgb(255, 254, 249)",
+      "background": "rgb(23, 75, 58)",
+      "ratio": 9.88
+    },
+    {
+      "selector": ".donate-card .footnote",
+      "foreground": "rgb(93, 109, 99)",
+      "background": "rgb(255, 254, 249)",
+      "ratio": 5.43
+    }
+  ],
+  "accessibility": {
+    "violations": []
+  },
+  "finishedAt": "2026-09-27T06:57:01.798Z"
+}

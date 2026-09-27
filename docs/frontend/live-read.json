@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-09-27T06:50:43.283Z",
+  "broadcast": false,
+  "attempts": [
+    {
+      "rpc": "https://ethereum-sepolia-rpc.publicnode.com",
+      "chainId": 11155111,
+      "blockNumber": 11791649,
+      "contracts": [
+        {
+          "name": "LaunchToken",
+          "address": "0xcacf5fc6c177d1147ed1c44aa86295c5edd94df3",
+          "codeBytes": 1722
+        },
+        {
+          "name": "TokenFaucet",
+          "address": "0xb8bd25d97468cacb96da676ab6c54fa74e1bddcc",
+          "codeBytes": 2992
+        }
+      ],
+      "featuredToken": "0xCacF5fC6C177D1147ED1c44aA86295c5eDD94df3",
+      "faucetDripBalanceMinor": "0",
+      "passed": true
+    }
+  ],
+  "quote": {
+    "passed": true,
+    "method": "eth_call",
+    "blockNumber": 11791649,
+    "quoter": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+    "inputEthMinor": "1000000000000000",
+    "outputDripMinor": "49627085152468411915572",
+    "gasEstimate": "87366"
+  }
+}
